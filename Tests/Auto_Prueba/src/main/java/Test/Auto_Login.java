@@ -145,46 +145,46 @@ public class Auto_Login {
 
         Thread.sleep(4000);
 
-        WebElement passed = driver.findElement(By.xpath("//*[@id=\"app\"]/div[1]/div[2]/div[2]/div[1]/form/div[2]/div[2]/button[3]")); // Interviewer textbox
+        WebElement passed = driver.findElement(By.xpath("//*[@id=\"app\"]/div[1]/div[2]/div[2]/div[1]/form/div[2]/div[2]/button[3]")); // the candidate passed button
         passed.click();
 
         Thread.sleep(4000);
 
-        WebElement save4 = driver.findElement(By.xpath("//*[@id=\"app\"]/div[1]/div[2]/div[2]/div/div/form/div[3]/button[2]")); // Interviewer textbox
+        WebElement save4 = driver.findElement(By.xpath("//*[@id=\"app\"]/div[1]/div[2]/div[2]/div/div/form/div[3]/button[2]")); // Save button
         save4.click();
 
         Thread.sleep(4000);
 
-        WebElement offer = driver.findElement(By.xpath("//*[@id=\"app\"]/div[1]/div[2]/div[2]/div[1]/form/div[2]/div[2]/button[3]")); // Interviewer textbox
+        WebElement offer = driver.findElement(By.xpath("//*[@id=\"app\"]/div[1]/div[2]/div[2]/div[1]/form/div[2]/div[2]/button[3]")); // To offer a job position for the candidate
         offer.click();
 
         Thread.sleep(4000);
 
-        WebElement save5 = driver.findElement(By.xpath("//*[@id=\"app\"]/div[1]/div[2]/div[2]/div/div/form/div[3]/button[2]")); // Interviewer textbox
+        WebElement save5 = driver.findElement(By.xpath("//*[@id=\"app\"]/div[1]/div[2]/div[2]/div/div/form/div[3]/button[2]")); // save button
         save5.click();
         Thread.sleep(4000);
 
-        WebElement hire = driver.findElement(By.xpath("//*[@id=\"app\"]/div[1]/div[2]/div[2]/div[1]/form/div[2]/div[2]/button[3]")); // Interviewer textbox
+        WebElement hire = driver.findElement(By.xpath("//*[@id=\"app\"]/div[1]/div[2]/div[2]/div[1]/form/div[2]/div[2]/button[3]")); // To hire the candidate
         hire.click();
         Thread.sleep(4000);
 
-        WebElement save6 = driver.findElement(By.xpath("//*[@id=\"app\"]/div[1]/div[2]/div[2]/div/div/form/div[3]/button[2]")); // Interviewer textbox
+        WebElement save6 = driver.findElement(By.xpath("//*[@id=\"app\"]/div[1]/div[2]/div[2]/div/div/form/div[3]/button[2]")); // save button
         save6.click();
 
         Thread.sleep(3000);
 
 
-        WebElement candidates = driver.findElement(By.xpath("//*[@id=\"app\"]/div[1]/div[1]/header/div[2]/nav/ul/li[1]/a")); // Interviewer textbox
+        WebElement candidates = driver.findElement(By.xpath("//*[@id=\"app\"]/div[1]/div[1]/header/div[2]/nav/ul/li[1]/a")); //  Look fo the candidates
         candidates.click();
 
         Thread.sleep(2000);
 
-        WebElement status = driver.findElement(By.xpath("//*[@id=\"app\"]/div[1]/div[2]/div[2]/div/div[1]/div[2]/form/div[1]/div/div[4]/div/div[2]/div/div"));
+        WebElement status = driver.findElement(By.xpath("//*[@id=\"app\"]/div[1]/div[2]/div[2]/div/div[1]/div[2]/form/div[1]/div/div[4]/div/div[2]/div/div"));  //  Look for the status
         status.click();
 
         Thread.sleep(2000);
 
-        WebElement dropdownStatus = driver.findElement(By.xpath("//*[@id=\"app\"]/div[1]/div[2]/div[2]/div/div[1]/div[2]/form/div[1]/div/div[4]/div/div[2]/div/div/div[10]"));
+        WebElement dropdownStatus = driver.findElement(By.xpath("//*[@id=\"app\"]/div[1]/div[2]/div[2]/div/div[1]/div[2]/form/div[1]/div/div[4]/div/div[2]/div/div/div[10]")); //  select the status
         dropdownStatus.click();
 
     }
