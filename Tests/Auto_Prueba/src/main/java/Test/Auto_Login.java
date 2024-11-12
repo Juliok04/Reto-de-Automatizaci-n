@@ -4,12 +4,8 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.Select;
-import org.openqa.selenium.support.ui.WebDriverWait;
-
 import java.time.Duration;
-import java.time.Instant;
+
 
 
 public class Auto_Login {
@@ -90,42 +86,50 @@ public class Auto_Login {
         WebElement consent = driver.findElement(By.xpath("//*[@id=\"app\"]/div[1]/div[2]/div[2]/div/div/form/div[7]/div/div/div/div[2]/div/label/span/i"));
         consent.click();
 
-        // /WebElement upload = driver.findElement(By.xpath("//*[@id=\"app\"]/div[1]/div[2]/div[2]/div/div/form/div[4]/div/div/div/div/div[2]/div/div[1]"));
-        //upload.sendKeys("C:\\Users\\julio\\Documents\\Reto de Automatizacion\\Reto-de-Automatizaci-n\\Tests\\Auto_Prueba\\src\\main\\resources\\CV\\CV_prueba.pdf");
+        Thread.sleep(3000);
 
-        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(3));
+        WebElement upload = driver.findElement(By.xpath("//*[@id=\"app\"]/div[1]/div[2]/div[2]/div/div/form/div[4]/div/div/div/div/div[2]/input"));
+        upload.sendKeys("C:\\Users\\julio\\Documents\\Reto de Automatizacion\\Reto-de-Automatizaci-n\\Tests\\Auto_Prueba\\src\\main\\resources\\CV\\CV_prueba.pdf");
 
-        // Here you press the button to save the information
+        Thread.sleep(3000);
+        
+  // Here you press the button to save the information
         WebElement save = driver.findElement(By.xpath("//*[@id=\"app\"]/div[1]/div[2]/div[2]/div/div/form/div[8]/button[2]"));
         save.click();
 
-        Thread.sleep(3000);
+        Thread.sleep(4000);
 
-        //Select Shortlist
+  //Shortlist 
         WebElement shortlist = driver.findElement(By.xpath("//*[@id=\"app\"]/div[1]/div[2]/div[2]/div[1]/form/div[2]/div[2]/button[2]"));
         shortlist.click();
 
         Thread.sleep(3000);
-
+        
+    //Save botton for the shortlist
         WebElement save2 = driver.findElement(By.xpath("//*[@id=\"app\"]/div[1]/div[2]/div[2]/div/div/form/div[3]/button[2]"));
         save2.click();
 
         Thread.sleep(3000);
-
+        
+    //Option to schedule
         WebElement schedule = driver.findElement(By.xpath("//*[@id=\"app\"]/div[1]/div[2]/div[2]/div[1]/form/div[2]/div[2]/button[2]"));
         schedule.click();
 
-        Thread.sleep(2000);
+        Thread.sleep(3000);
 
         WebElement title = driver.findElement(By.xpath("//*[@id=\"app\"]/div[1]/div[2]/div[2]/div/div/form/div[2]/div/div[1]/div/div[2]/input"));
         title.sendKeys("Final Interview");
-        /*---------------------------------------------------------------------------------------------------------------------------------*/
-        WebElement interviewer = driver.findElement(By.xpath("//*[@id=\"app\"]/div[1]/div[2]/div[2]/div/div/form/div[2]/div/div[2]/div/div/div[2]/div/div[1]/input")); // Interviewer textbox
+        
+
+      // Interviewer textbox
+        
+        WebElement interviewer = driver.findElement(By.xpath("//*[@id=\"app\"]/div[1]/div[2]/div[2]/div/div/form/div[2]/div/div[2]/div/div/div[2]/div/div[1]/input")); 
         interviewer.sendKeys("Peter Mac Anderson");
 
         Thread.sleep(2000);
-
-        WebElement pick = driver.findElement(By.xpath("//*[@id=\"app\"]/div[1]/div[2]/div[2]/div/div/form/div[2]/div/div[2]/div/div/div[2]/div/div[2]")); // Interviewer textbox
+        
+    // Interviewer textbox
+        WebElement pick = driver.findElement(By.xpath("//*[@id=\"app\"]/div[1]/div[2]/div[2]/div/div/form/div[2]/div/div[2]/div/div/div[2]/div/div[2]")); 
         pick.click();
 
         WebElement Date = driver.findElement(By.xpath("//*[@id=\"app\"]/div[1]/div[2]/div[2]/div/div/form/div[2]/div/div[3]/div/div[2]/div/div/input")); // Date
@@ -172,6 +176,16 @@ public class Auto_Login {
 
         WebElement candidates = driver.findElement(By.xpath("//*[@id=\"app\"]/div[1]/div[1]/header/div[2]/nav/ul/li[1]/a")); // Interviewer textbox
         candidates.click();
+
+        Thread.sleep(2000);
+
+        WebElement status = driver.findElement(By.xpath("//*[@id=\"app\"]/div[1]/div[2]/div[2]/div/div[1]/div[2]/form/div[1]/div/div[4]/div/div[2]/div/div"));
+        status.click();
+
+        Thread.sleep(2000);
+
+        WebElement dropdownStatus = driver.findElement(By.xpath("//*[@id=\"app\"]/div[1]/div[2]/div[2]/div/div[1]/div[2]/form/div[1]/div/div[4]/div/div[2]/div/div/div[10]"));
+        dropdownStatus.click();
 
     }
 }
