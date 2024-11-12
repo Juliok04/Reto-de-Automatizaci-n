@@ -187,5 +187,8 @@ public class Auto_Login {
         WebElement dropdownStatus = driver.findElement(By.xpath("//*[@id=\"app\"]/div[1]/div[2]/div[2]/div/div[1]/div[2]/form/div[1]/div/div[4]/div/div[2]/div/div/div[10]")); //  select the status
         dropdownStatus.click();
 
+        WebElement search = driver.findElement(By.xpath("//*[@id=\"app\"]/div[1]/div[2]/div[2]/div/div[1]/div[2]/form/div[4]/button[2]"));  //to look for tha status selected
+        search.click();
+
     }
 }
